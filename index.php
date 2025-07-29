@@ -8,14 +8,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <?php include('templates/menu.php'); ?>
 <?php include('templates/slider.php'); ?>
+<?php include('templates/segments.php'); ?>
 
+<i data-content="Go to top" data-variation="tiny" data-position="left center" id="scrollTop" class="angle double up icon"></i>
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 

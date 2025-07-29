@@ -1,4 +1,3 @@
-
 <div class="slider">
     
     <div class="slides"><!-- start slides -->
@@ -11,9 +10,7 @@
           </div>
         </div>
 
-
-
-        <div class="slide active">
+        <div class="slide">
           <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
           <div class="slide-meta">
             <h4>Başlık 2</h4>
@@ -21,8 +18,7 @@
           </div>
         </div>
 
-
-        <div class="slide active">
+        <div class="slide">
           <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');"></div>
           <div class="slide-meta">
             <h4>Başlık 3</h4>
@@ -51,36 +47,4 @@
 
 </div><!-- .slider kapanışı -->
 
-  <!-- Deneme1 Bölümü -->
-<div id="deneme1" class="ui vertical segment">
-  <div class="ui container">
-    <h2 class="ui header">Deneme1 Başlık</h2>
-    <p><br>a<br>ab<br>ac<br>ag<br>ag<br>as<br>aa<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <!-- bu br kodlarını sayfada longtext gibi bir yapı oluşturmak için ekledim. smotthscroll u görebilmek için. dummytext gibi düşünebilirsin -->
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Sed vitae justo ut tortor dignissim tincidunt.
-    </p>
-  </div>
-</div>
-
-<!-- Deneme2 Bölümü -->
-<div id="deneme2" class="ui vertical segment">
-  <div class="ui container">
-    <h2 class="ui header">Deneme2 Başlık</h2>
-    <p><br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a
-    <!-- bu br kodlarını sayfada longtext gibi bir yapı oluşturmak için ekledim. smotthscroll u görebilmek için. dummytext gibi düşünebilirsin -->
-      Praesent consectetur, purus at fermentum convallis, 
-      nibh urna ultricies turpis, in malesuada libero.
-    </p>
-  </div>
-</div>
+<div id="mainLogo"></div>

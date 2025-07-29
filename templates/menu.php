@@ -1,6 +1,18 @@
-<div class="ui inverted menu scroll-menu">
-  <div class="ui container">
-    <a href="#deneme1" class="item">deneme1</a>
-    <a href="#deneme2" class="item">deneme2</a>
+<div class="ui borderless menu scroll-menu">
+
+  <div class="header item">
+    <div class="menuLogo"></div>
   </div>
+
+  <div class="ui container">
+    <a href="#projects" class="item">Projects</a>
+    <a href="#about" class="item">About</a>
+    <a href="#services" class="item">Services</a>
+    <a href="#contact" class="item">Contact</a>
+  </div>
+
+  <div class="right menu">
+    <a href="#" class="item">Deneme</a>
+  </div>
+
 </div>

@@ -46,7 +46,7 @@ html, body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: kenburns 20s ease-in-out infinite alternate;
+  animation: kenburns 20s ease-in infinite alternate;
   z-index: 1;
 }
 
@@ -70,7 +70,6 @@ html, body {
   z-index: 2;
   transform: none;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .slide-meta h4, .slide-meta h5 {
@@ -89,8 +88,10 @@ html, body {
   position: fixed;
   top: -60px;
   width: 100%;
+  height: 60px;
   z-index: 1000;
   transition: top 0.3s ease;
+  border-radius: 0px !important;
 }
 
 .scroll-menu.visible {
@@ -152,4 +153,39 @@ html, body {
     padding: 10px;
     font-size: 13px;
   }
+}
+#mainLogo{
+  z-index: 999;
+  margin-left: 42%;
+  position: absolute;
+  top:300px;
+  width:300px;
+  height:150px;
+  background-image: url('src/logoPng.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menuLogo{
+  height: 50px;
+  width: 100px;
+  background-image: url(src/logoMenu.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/*Scroll to top button*/
+#scrollTop{
+    display:none;
+    font-size: 250%;
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#scrollTop:hover{  
+    transition: 0.5s;
+    transform: translateY(-0.2em);
 }
