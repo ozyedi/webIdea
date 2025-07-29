@@ -1,0 +1,117 @@
+/* ---------------- Reset ---------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* ---------------- Slider Konteyneri ---------------- */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------------- Slaytlar ---------------- */
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  animation: kenburns 20s ease-in-out infinite alternate;
+}
+.slide.active { opacity: 1; }
+
+@keyframes kenburns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.2); }
+}
+
+/* ---------------- Slide Meta – Sağ Alt Kutucuk ---------------- */
+.slide-meta {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  max-width: 40%;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  z-index: 2;
+  transform: none;
+  pointer-events: none;
+  will-change: transform;
+}
+.slide-meta h4,
+.slide-meta h5 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.slide-meta p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ---------------- Sabit Menü ---------------- */
+.scroll-menu {
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+.scroll-menu.visible { top: 0; }
+
+/* ---------------- Slider Navigasyon ---------------- */
+.slider-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  color: #fff; font-size: 2em; padding: 0.5em;
+  cursor: pointer; z-index: 100;
+}
+.slider-nav.prev { left: 1em; }
+.slider-nav.next { right: 1em; }
+
+/* ---------------- Slider Dots ---------------- */
+.slider-dots {
+  position: absolute; bottom: 1.5em;
+  left: 50%; transform: translateX(-50%);
+  display: flex; gap: 0.5em; z-index: 100;
+}
+.dot {
+  width: .8em; height: .8em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%; cursor: pointer;
+  transition: background .3s;
+}
+.dot.active { background: #fff; }
+
+/* ---------------- İçerik Bölümleri ---------------- */
+.ui.vertical.segment {
+  padding: 4em 0;
+}
+.scroll-menu .item.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ---------------- Responsive Ayar ---------------- */
+@media (max-width:768px) {
+  .slide-meta {
+    max-width: 80%;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+/* NOT: CSS scroll-behavior ve scroll-margin-top kaldırıldı.
+   Tüm scroll işlemi artık aşağıdaki JS’e emanet. */
